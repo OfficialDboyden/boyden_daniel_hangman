@@ -5,3 +5,14 @@
 {
 	display: none;
 }
+
+ul
+{
+  list-style: none;
+}
+
+#hangman_scene
+{
+  width: 700px;
+  margin: 30px;
+}
