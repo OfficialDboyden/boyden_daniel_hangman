@@ -1,0 +1,37 @@
+<svg id="letters" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180.09 175.98">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 40px;
+        font-family: MyriadPro-Regular, Myriad Pro;
+      }
+    </style>
+  </defs>
+  <title>letters</title>
+  <text class="cls-1" transform="translate(36.5 165.98)">Z</text>
+  <text class="cls-1" transform="translate(6 165.98)">Y</text>
+  <text class="cls-1" transform="translate(157.25 132.48)">X</text>
+  <text class="cls-1" transform="translate(121.75 132.48)">W</text>
+  <text class="cls-1" transform="translate(97.75 132.48)">V</text>
+  <text class="cls-1" transform="translate(65.5 132.48)">U</text>
+  <text class="cls-1" transform="translate(38 132.48)">T</text>
+  <text class="cls-1" transform="translate(6 132.48)">S</text>
+  <text class="cls-1" transform="translate(156.25 99.48)">R</text>
+  <text class="cls-1" transform="translate(124.75 99.48)">Q</text>
+  <text class="cls-1" transform="translate(98.75 99.48)">P</text>
+  <text class="cls-1" transform="translate(35 99.48)">N</text>
+  <text class="cls-1" transform="translate(64.5 99.48)">O</text>
+  <text class="cls-1" transform="translate(0 99.48)">M</text>
+  <text class="cls-1" transform="translate(156.25 66.48)">L</text>
+  <text class="cls-1" transform="translate(127.75 66.48)">K</text>
+  <text class="cls-1" transform="translate(98.75 66.48)">J</text>
+  <text class="cls-1" transform="translate(35 66.48)">H</text>
+  <text class="cls-1" transform="translate(73.5 66.48)">I</text>
+  <text class="cls-1" transform="translate(2 66.48)">G</text>
+  <text class="cls-1" transform="translate(156.25 33.48)">F</text>
+  <text class="cls-1" transform="translate(127.75 33.48)">E</text>
+  <text class="cls-1" transform="translate(94.75 33.48)">D</text>
+  <text class="cls-1" transform="translate(35 33.48)">B</text>
+  <text class="cls-1" transform="translate(63.5 33.48)">C</text>
+  <text class="cls-1" transform="translate(2 33.48)">A</text>
+</svg>
