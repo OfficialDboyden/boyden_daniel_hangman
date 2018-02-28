@@ -16,3 +16,18 @@ ul
   width: 700px;
   margin: 30px;
 }
+
+.default
+{
+	opacity: 0;
+}
+
+.showBodyPart
+{
+	opacity: 1;
+}
+
+.resetScreen
+{
+	display: none;
+}
