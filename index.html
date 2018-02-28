@@ -3,83 +3,121 @@
 <head>
 <meta charset="UTF-8">
 <title>Hangman Is Fun!</title>
-<link href="css/css_reset.css" rel="stylesheet" type="text/css">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-  <h1>Hangman</h1>
+<h1>Hangman</h1>
 
+<section>
+<h4>Make A Guess!</h4>
 
+<p class="current-word">
+</p>
 
-  <section>
-    <h4>Make A Guess!</h4>
-
-    <p class="current-word"></p>
 
 <input type="text" class="letter-guess">
-  </section>
+</section>
 
+<h2 class="hidden">Hangman Scene</h2>
 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 354.55 357.18">
+<defs>
+<style>
+.sun {
+fill: #f2b851;
+}
 
+.grass {
+fill: green;
+}
 
-  <ul>
+.rainbow {
+opacity: 0.5;
+}
 
-    <li>
-      <h2 class="hidden">Hangman Scene</h2>
-      
-    </li>
+.hanger {
+fill: #5e4833;
+}
 
+.string, .man {
+fill: none;
+}
 
+.string, .head, .man {
+stroke: #231f20;
+stroke-miterlimit: 10;
+}
 
+.string {
+stroke-width: 3px;
+}
 
+.head {
+fill: #fff;
+stroke-width: 4px;
+}
 
+.man {
+stroke-width: 5px;
+}
+</style>
+</defs>
+<title>hangman</title>
+<g id="background_default">
+<g id="sun">
+<polygon class="sun" points="250.09 54.03 236.24 61.07 250.09 68.11 250.09 54.03"/>
+<polygon class="sun" points="304.45 54.03 304.45 68.11 318.31 61.07 304.45 54.03"/>
+<polygon class="sun" points="257.78 39.19 242.38 37.12 249.78 50.79 257.78 39.19"/>
+<polygon class="sun" points="312.17 37.12 296.76 39.19 304.76 50.79 312.17 37.12"/>
+<polygon class="sun" points="291.51 22.32 279.77 32.52 292.82 37.81 291.51 22.32"/>
+<polygon class="sun" points="263.04 22.32 261.72 37.81 274.77 32.52 263.04 22.32"/>
+<polygon class="sun" points="242.38 85.47 257.78 83.41 249.78 71.81 242.38 85.47"/>
+<polygon class="sun" points="312.17 85.47 304.76 71.81 296.76 83.41 312.17 85.47"/>
+<polygon class="sun" points="292.82 84.78 279.77 90.08 291.51 100.27 292.82 84.78"/>
+<polygon class="sun" points="274.77 90.08 261.72 84.78 263.04 100.27 274.77 90.08"/>
+<circle id="sun_circle" class="sun" cx="277.03" cy="61.3" r="23.48"/>
+</g>
+<g id="grass">
+<path class="grass" d="M538.25,424.44s-6.75-22.25-20-25.25-14,0-14,0,3.25-4.5,17-2.75,17,16.75,17,16.75,3.5-1.5,0-23.25-22.5-30.75-22.5-30.75,22.5,8.75,25.5,31.5,2.24,18,2.24,18,1.76-13.25,19.51-20c0,0,8.75-3,14.25-1.25,0,0-16.5,1.25-25,13.75s-8.76,23.25-8.76,23.25Z" transform="translate(-339.39 -69.38)"/>
+<path class="grass" d="M496.49,424.44s-6.75-22.25-20-25.25-14,0-14,0,3.25-4.5,17-2.75,17,16.75,17,16.75,3.5-1.5,0-23.25S474,359.19,474,359.19s22.5,8.75,25.5,31.5,2.24,18,2.24,18,1.76-13.25,19.51-20c0,0,8.75-3,14.25-1.25,0,0-16.5,1.25-25,13.75s-8.76,23.25-8.76,23.25Z" transform="translate(-339.39 -69.38)"/>
+<path class="grass" d="M579.75,426.56s6.75-22.25,20-25.25,14,0,14,0-3.25-4.5-17-2.75-17,16.75-17,16.75-3.5-1.5,0-23.25,22.5-30.75,22.5-30.75-22.5,8.75-25.5,31.5-2.24,18-2.24,18-1.76-13.25-19.51-20c0,0-8.75-3-14.25-1.25,0,0,16.5,1.25,25,13.75s8.76,23.25,8.76,23.25Z" transform="translate(-339.39 -69.38)"/>
+<path class="grass" d="M465.91,424.44s6.75-22.25,20-25.25,14,0,14,0-3.25-4.5-17-2.75-17,16.75-17,16.75-3.5-1.5,0-23.25,22.5-30.75,22.5-30.75-22.5,8.75-25.5,31.5-2.24,18-2.24,18-1.76-13.25-19.51-20c0,0-8.75-3-14.25-1.25,0,0,16.5,1.25,25,13.75s8.76,23.25,8.76,23.25Z" transform="translate(-339.39 -69.38)"/>
+</g>
+</g>
+<g id="background_win">
+<image id="rainbow" class="rainbow" width="1600" height="800" transform="translate(0 177.62) scale(0.22)" xlink:href="images/rainbow.png"/>
+</g>
+<g id="hanger">
+<rect class="hanger" x="0.55" y="325.62" width="103.64" height="29.52"/>
+<rect class="hanger" x="43.61" y="12.62" width="17.82" height="321.67"/>
+<rect class="hanger" x="43.61" width="136.67" height="12.62"/>
+</g>
+<g id="string">
+<line class="string" x1="176.94" y1="12.62" x2="177.49" y2="81.62"/>
+</g>
+<g id="man">
+<circle id="head" class="head default wrong0" cx="177.49" cy="113.5" r="31.88"/>
+<line id="body" class="man default wrong1" x1="177.49" y1="145.42" x2="177.49" y2="239.62"/>
+<line id="left_arm" class="man default wrong2" x1="177.61" y1="155.29" x2="137.49" y2="213.95"/>
+<line id="right_arm" class="man default wrong3" x1="177.49" y1="155.29" x2="217.61" y2="213.95"/>
+<line id="left_leg" class="man default wrong4" x1="149.49" y1="308.14" x2="177.86" y2="235.68"/>
+<line id="right_leg" class="man default wrong5" x1="205.86" y1="308.14" x2="177.49" y2="235.68"/>
+<circle id="eye_left" class="head default wrong0" cx="166.94" cy="105.95" r="5.67"/>
+<circle id="eye_right" class="head default wrong0" cx="185.94" cy="105.95" r="5.67"/>
+<path id="frown" class="head default wrong0" d="M504.33,195.33s14,9.33,24,0" transform="translate(-339.39 -69.38)"/>
+</g>
+</svg>
 
+<p class="current-word"></p>
+  <input type="text" class="letter-guess">
 
-    <li>
-      <h2 class="hidden">letters</h2>
-      <svg id="letters" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180.09 175.98">
-        <defs>
-          <style>
-            .cls_letters {
-              font-size: 40px;
-              font-family: MyriadPro-Regular, Myriad Pro;
-            }
-          </style>
-        </defs>
-        <title>letters</title>
-        <text class="cls_letters" transform="translate(36.5 165.98)">Z</text>
-        <text class="cls_letters" transform="translate(6 165.98)">Y</text>
-        <text class="cls_letters" transform="translate(157.25 132.48)">X</text>
-        <text class="cls_letters" transform="translate(121.75 132.48)">W</text>
-        <text class="cls_letters" transform="translate(97.75 132.48)">V</text>
-        <text class="cls_letters" transform="translate(65.5 132.48)">U</text>
-        <text class="cls_letters" transform="translate(38 132.48)">T</text>
-        <text class="cls_letters" transform="translate(6 132.48)">S</text>
-        <text class="cls_letters" transform="translate(156.25 99.48)">R</text>
-        <text class="cls_letters" transform="translate(124.75 99.48)">Q</text>
-        <text class="cls_letters" transform="translate(98.75 99.48)">P</text>
-        <text class="cls_letters" transform="translate(35 99.48)">N</text>
-        <text class="cls_letters" transform="translate(64.5 99.48)">O</text>
-        <text class="cls_letters" transform="translate(0 99.48)">M</text>
-        <text class="cls_letters" transform="translate(156.25 66.48)">L</text>
-        <text class="cls_letters" transform="translate(127.75 66.48)">K</text>
-        <text class="cls_letters" transform="translate(98.75 66.48)">J</text>
-        <text class="cls_letters" transform="translate(35 66.48)">H</text>
-        <text class="cls_letters" transform="translate(73.5 66.48)">I</text>
-        <text class="cls_letters" transform="translate(2 66.48)">G</text>
-        <text class="cls_letters" transform="translate(156.25 33.48)">F</text>
-        <text class="cls_letters" transform="translate(127.75 33.48)">E</text>
-        <text class="cls_letters" transform="translate(94.75 33.48)">D</text>
-        <text class="cls_letters" transform="translate(35 33.48)">B</text>
-        <text class="cls_letters" transform="translate(63.5 33.48)">C</text>
-        <text class="cls_letters" transform="translate(2 33.48)">A</text>
-      </svg>
+<section class="reset-screen">
+  <h3>Game Over! You ran out of guesses!</h3>
+  <button>Try Again</button>
+</section>
 
-    </li>
-
-  </ul>
-
-	<script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
