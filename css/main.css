@@ -1,33 +1,73 @@
 @charset "UTF-8";
-/* CSS Document */
+/* CSS Document*/
 
-.hidden
+body
 {
-	display: none;
+  text-align: center;
+  font-family: 'Overlock', georgia, cursive;
 }
 
-ul
+p
 {
-  list-style: none;
+  font-size: 40px;
 }
 
-#hangman_scene
+label, i
 {
-  width: 700px;
-  margin: 30px;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+h1
+{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#container
+{
+width: 960px;
+ margin: 0 auto;
+}
+
+svg
+{
+  width: 500px;
 }
 
 .default
 {
-	opacity: 0;
+  opacity: 0;
 }
 
 .showBodyPart
 {
-	opacity: 1;
+  opacity: 1;
 }
 
-.resetScreen
+.reset-screen
 {
-	display: none;
+  display: none;
+  padding-top: 20%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.reset-button
+{
+  cursor: pointer;
+}
+
+input
+{
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  margin: 10px 0 10px 49%;
+  display: block;
 }
